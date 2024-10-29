@@ -1,0 +1,328 @@
+/* General Styling */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #83a4d4, #b6fbff);
+    color: #333;
+  }
+  
+  #app {
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  /*background animation*/
+
+
+  body {
+    background: #00b4ff;
+    color: #333;
+    font: 100% Arial, Sans Serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  #background-wrap {
+      bottom: 0;
+    left: 0;
+    padding-top: 50px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  /* KEYFRAMES */
+  
+  @-webkit-keyframes animateCloud {
+      0% {
+          margin-left: -1000px;
+      }
+      100% {
+          margin-left: 100%;
+      }
+  }
+  
+  @-moz-keyframes animateCloud {
+      0% {
+          margin-left: -1000px;
+      }
+      100% {
+          margin-left: 100%;
+      }
+  }
+  
+  @keyframes animateCloud {
+      0% {
+          margin-left: -1000px;
+      }
+      100% {
+          margin-left: 100%;
+      }
+  }
+  
+  /* ANIMATIONS */
+  
+  .x1 {
+    -webkit-animation: animateCloud 35s linear infinite;
+    -moz-animation: animateCloud 35s linear infinite;
+    animation: animateCloud 35s linear infinite;
+    
+    -webkit-transform: scale(0.65);
+    -moz-transform: scale(0.65);
+    transform: scale(0.65);
+  }
+  
+  .x2 {
+    -webkit-animation: animateCloud 20s linear infinite;
+    -moz-animation: animateCloud 20s linear infinite;
+    animation: animateCloud 20s linear infinite;
+    
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+  
+  .x3 {
+    -webkit-animation: animateCloud 30s linear infinite;
+    -moz-animation: animateCloud 30s linear infinite;
+    animation: animateCloud 30s linear infinite;
+    
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  
+  .x4 {
+    -webkit-animation: animateCloud 18s linear infinite;
+    -moz-animation: animateCloud 18s linear infinite;
+    animation: animateCloud 18s linear infinite;
+    
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  
+  .x5 {
+    -webkit-animation: animateCloud 25s linear infinite;
+    -moz-animation: animateCloud 25s linear infinite;
+    animation: animateCloud 25s linear infinite;
+    
+    -webkit-transform: scale(0.55);
+    -moz-transform: scale(0.55);
+    transform: scale(0.55);
+  }
+  
+  /* OBJECTS */
+  
+  .cloud {
+    background: #fff;
+    background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
+    background: -linear-gradient(linear, left top, left bottom,(5%,#fff), color-stop(100%,#f1f1f1));
+    background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+    background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+    background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+    background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+    
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    
+    -webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  
+    height: 120px;
+    position: relative;
+    width: 350px;
+  }
+  
+  .cloud:after, .cloud:before {
+      background: #fff;
+    content: '';
+    position: absolute;
+    z-indeX: -1;
+  }
+  
+  .cloud:after {
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+  
+    height: 100px;
+    left: 50px;
+    top: -50px;
+    width: 100px;
+  }
+  
+  .cloud:before {
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+  
+    width: 180px;
+    height: 180px;
+    right: 50px;
+    top: -90px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    color: #2c3e50;
+  }
+  
+  header p {
+    font-size: 1em;
+    color: #7f8c8d;
+  }
+  
+  /* Search Box */
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #bebbbb;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 70%;
+    transition: transform 0.3s ease; 
+  }
+  
+  .search-container input:focus {
+    transform: scale(1.05); 
+    border-color: #3498db; 
+  }
+  
+  .search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s ease;
+  }
+  
+  .search-container button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  .search-container #voice-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s;
+    border-right: 1px solid #bebbbb; 
+  }
+  
+  .search-container #voice-btn:hover {
+    background-color: #2980b9;
+  }
+  /* Weather Card */
+  .weather-card {
+    background: #b5b5b5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .weather-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .weather-card p {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  
+  /* Chart Container */
+  .chart-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(71, 65, 65, 0.1);
+  }
+  
+  .chart-container h2 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
+  
