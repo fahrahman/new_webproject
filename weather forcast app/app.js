@@ -1,4 +1,4 @@
-const apiKey = '0f335d0c54af958153ca075f6599532e';
+const apiKey = '0f335d0c54af958153ca075f652e';
 const forecastChart = document.getElementById('forecast-chart').getContext('2d');
 let chart;
 displayLoadingMessage();
